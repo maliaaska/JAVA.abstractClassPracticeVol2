@@ -11,7 +11,7 @@ public class Motorcycle extends Vehicle_PoweredVehicle {
 
     private Engine engine;
 
-    //Zaimplementuj konstruktor dla klasy Car, inicjalizujący pola specyficzne dla samochodu i pole engine.
+    //Zaimplementuj konstruktor dla klasy Motorcycle, inicjalizujący pola specyficzne dla motocykla i pole engine.
     public Motorcycle (String make, String name, boolean isSportBike, double consumption, Engine engine) {
         this.make = make;
         this.name = name;
@@ -23,7 +23,13 @@ public class Motorcycle extends Vehicle_PoweredVehicle {
 
 
     //Dodaj dodatkowy konstruktor, który oprócz parametrów z klasy Motorcycle, przyjmuje też parametry z klasy Engine i tworzy obiekt silnika, przypisując go do pola engine.
-
+    public Motorcycle ( String make, String name, boolean isSportBike, double consumption, String engineType, FuelType engineFuelType) {
+        this.make = make;
+        this.name = name;
+        this.isSportBike = isSportBike;
+        this.consumption = consumption;
+        this.engine = new Engine( engineType, engineFuelType);
+    }
 
     @Override
     public void getDescription() {

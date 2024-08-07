@@ -3,10 +3,6 @@ package com.milewskiarkadiuszmodul12abstractTasks;
 import java.util.Objects;
 
 public class Engine {
-//    public static void main (String[] args) {
-//
-//    }
-
    private String type;
    private FuelType fuel;
    public Engine() {};

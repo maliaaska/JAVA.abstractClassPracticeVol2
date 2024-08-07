@@ -17,7 +17,6 @@ public class Bicycle extends Vehicle_PoweredVehicle {
     }
 
     //Dodaj publiczne metody, np. adjustGears(int newGears) do zmiany liczby biegów i attachBasket() do dołączania koszyka, aby użytkownik mógł dostosować rower do swoich potrzeb.
-
     public void adjustGears(int newGears) {
         System.out.println("A gear switched to gear " + newGears);
     }

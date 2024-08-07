@@ -15,6 +15,9 @@ public class Main {
         Bicycle bicycle = new Bicycle("24", "Giant", 5, true);
         System.out.println(bicycle);
 
+        bicycle.attachBasket();
+        bicycle.adjustGears(5);
+
         // Tworzenie tablicy pojazdów
         Vehicle_PoweredVehicle[] vehicles = new Vehicle_PoweredVehicle[]{car1, motorcycle};
 
