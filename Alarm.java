@@ -6,6 +6,6 @@ public interface Alarm {
     public static final String sound = "Dryn Dryn";
     void turnAlarmOn();
     void turnAlarmOff();
-
+    // this is an testing text if a new branch has been created and pushed to github
 
 }
