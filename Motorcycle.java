@@ -89,7 +89,7 @@ public class Motorcycle extends Vehicle_PoweredVehicle {
 
     @Override
     public void stop() {
-        System.out.println("The motocycle stops rapidly.");
+        System.out.println("The motorcycle stops rapidly.");
     }
 
     @Override

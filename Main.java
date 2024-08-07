@@ -12,6 +12,10 @@ public class Main {
         Vehicle_PoweredVehicle motorcycle = new Motorcycle("152", "Yamaha", true, 4.5, motoEngine);
         System.out.println(motorcycle);
 
+        //Metody wywoływany z klasy Motorcycle nadpisane z klasy rozszerzonej Vehicle_PoweredVehicle
+        motorcycle.drive();
+        motorcycle.stop();
+
         Bicycle bicycle = new Bicycle("24", "Giant", 5, true);
         System.out.println(bicycle);
 
@@ -32,15 +36,15 @@ public class Main {
         } else {
             System.out.println("The racing team cannot complete the race.");
         }
-//
-//        // Uruchamianie wszystkich pojazdów w zespole
-//        team.startAllVehicles();
-//
-//        // Włączanie alarmu we wszystkich pojazdach w zespole
-//        team.turnOnAllAlarms();
-//
-//        // Wyłączanie alarmu we wszystkich pojazdach w zespole
-//        team.turnOffAllAlarms();
+
+        // Uruchamianie wszystkich pojazdów w zespole
+        team.startAllVehicles();
+
+        // Włączanie alarmu we wszystkich pojazdach w zespole
+        team.turnOnAllAlarms();
+
+        // Wyłączanie alarmu we wszystkich pojazdach w zespole
+        team.turnOffAllAlarms();
     }
 
 }
